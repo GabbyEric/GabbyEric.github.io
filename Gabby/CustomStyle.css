@@ -1,0 +1,136 @@
+nav{
+    border-top: 4px solid #004A98;
+    border-bottom: 1px solid rgb(221, 217, 217);
+}
+.hover_me:hover{
+    text-decoration: 2px underline #FF8142;
+    cursor: pointer;
+}
+
+.hover_m,.active:hover{
+    text-decoration: 2px underline #FF8142;
+}
+
+.loader {
+    display: flex;
+    position: relative;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    inset: 0;
+    z-index: 999999;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+#preloader{
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid #FF8142;
+    border-left: 4px solid #FF8142;
+    border-right: 4px solid #004A98;
+    border-bottom: 4px solid #004A98;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* text-align: center; */
+    animation: spin 2s linear infinite;
+}
+.navbar{
+   position:fixed;
+   left: 0px;
+   top: 0px;
+   height: 70px;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   width: 100%;
+   z-index: 200;
+  /* background-image: linear-gradient(180deg, #000000, rgba(0,0,0,0.8) 5%, transparent);*/
+   width:100%;
+   justify-content: flex-start;
+}
+
+.b-footer{
+   display:inline-block ;
+   text-decoration: none;
+}
+.soci{
+   background-color: transparent;
+   display: flex;
+   justify-content: space-between ;
+   align-items: center ;
+}
+.abtu{
+   background-color: transparent;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+}
+/*=====making responsive====*/
+@media(max-width:1010px){
+   .navbar,
+   .nav,
+   .soci,
+   .loader,
+   .b-footer
+   .abtu,
+   #preloader{
+      width: 100%;
+   }
+   
+}
+
+@media(max-width:850px){
+   .carousel-inner{
+      padding: 40px 0px 70px 0px;
+      min-height: 550px;
+   }
+   
+  .carousel-item{
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+     object-position: center;
+  }
+  
+@media(max-width:500px){
+   .navbar,
+   .nav{
+      height :70px;
+   }
+   .logo-container{
+      width: 85%;
+   }
+   #main{
+      margin-top: 0px;
+      padding-top: 100px;
+   }
+   .summery-details{
+      padding:10px;
+   }
+@media(max-width:410px){
+   .project-box{
+      height: 230px;
+   }
+   .contact h3{
+      text-align: center;
+   }
+}
+
